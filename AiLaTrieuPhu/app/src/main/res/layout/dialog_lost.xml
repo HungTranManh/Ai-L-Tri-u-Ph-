@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<TextView
+    android:drawableLeft="@drawable/save"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="#03A9F4"
+    android:gravity="center"
+    android:textSize="32sp"
+    android:textColor="@color/colorString"
+    android:text="Finish"
+    />
+    <TextView
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/colorTextMoney"
+        android:text="Bạn Sẽ Ra về Với:"/>
+    <TextView
+        android:layout_marginTop="16dp"
+        android:id="@+id/tv_money"
+        android:layout_width="match_parent"
+        android:textSize="24sp"
+        android:textColor="@color/colorTextMoney"
+        android:gravity="center"
+        android:text="000,000 VND"
+        android:layout_height="wrap_content" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Level:"
+        android:textSize="24sp"
+        android:textColor="@color/colorTextMoney"
+        android:gravity="end"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:id="@+id/tv_level"
+        android:textSize="24sp"
+        android:gravity="start"
+        android:textColor="@color/colorTextMoney"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:hint="Tên Người Chơi"/>
+</LinearLayout>
