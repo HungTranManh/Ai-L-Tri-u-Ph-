@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/line"
+    android:background="@drawable/backgroud_item_album"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="96dp">
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="96dp"
+        android:src="@drawable/not_nhac"
+        android:layout_height="96dp" />
+    <TextView
+        android:gravity="center"
+        android:layout_toRightOf="@id/iv_avatar"
+        android:id="@+id/tv_name_album"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_height="45dp"/>
+    <TextView
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:id="@+id/tv_name_singer_album"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@id/tv_name_album"
+        android:layout_toRightOf="@id/iv_avatar"
+        android:layout_height="45dp" />
+    <TextView
+        android:id="@+id/BH"
+        android:layout_width="wrap_content"
+        android:text="Bài Hát"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="16sp"
+        android:layout_height="18dp" />
+    <TextView
+        android:id="@+id/tv_number_size"
+        android:layout_width="48dp"
+        android:layout_height="18dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"
+        android:text="0"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/BH"
+        android:gravity="center"
+        />
+
+</RelativeLayout>

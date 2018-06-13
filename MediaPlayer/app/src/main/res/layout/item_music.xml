@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="@drawable/backgroud_default"
+    android:id="@+id/line"
+   >
+    <ImageView
+        android:id="@+id/iv_singer"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/not_nhac"
+        />
+    <TextView
+        android:layout_toRightOf="@id/iv_singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginLeft="4dp"
+        android:gravity="center"
+        android:text="Hua"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/tv_name_music"/>
+    <TextView
+        android:id="@+id/tv_name_singer"
+        android:layout_toRightOf="@id/iv_singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Duy Khang"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@id/tv_name_music"
+        android:layout_marginLeft="32dp"/>
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:text="3:40"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_name_music"
+        android:textColor="@color/colorAccent"
+        android:layout_alignBottom="@id/iv_singer"
+        />
+
+</RelativeLayout>
